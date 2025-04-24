@@ -70,7 +70,7 @@ export default {
         display: ['Poppins', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        'warm': '0 4px 14px 0 rgba(203, 105, 30, 0.1)',
+        'warm': '0 4px 14px 0 rgba(255, 255, 255, 0.1)',
       },
       backgroundImage: {
         'texture': "url('/images/texture.webp')",
