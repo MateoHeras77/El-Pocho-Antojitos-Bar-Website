@@ -1,0 +1,196 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CallToAction from '../components/CallToAction.astro';
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.pexels.com/photos/2092507/pexels-photo-2092507.jpeg" 
+        alt="El Pocho patio dining scene" 
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900 via-charcoal-900/70 to-charcoal-900/30"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10 mt-12">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6 fade-in">
+          Authentic Mexican Street Eats in the Heart of Toronto
+        </h1>
+        <p class="text-xl text-white/90 mb-8 max-w-2xl fade-in">
+          Experience vibrant flavors, craft cocktails, and the lively atmosphere of Mexico's street food culture.
+        </p>
+        <div class="flex flex-wrap gap-4 fade-in">
+          <a href="/menu" class="btn btn-primary">
+            View Our Menu
+          </a>
+          <a href="https://www.opentable.com/restref/client/?restref=732292&lang=en-US&ot_source=Restaurant%20website&color=5&corrid=72fb486f-bc35-47e4-a772-13cc3a59b2a7" class="btn btn-secondary bg-white/20 text-white border-white backdrop-blur-sm hover:bg-white/30" target="_blank" rel="noopener noreferrer">
+            Book a Table
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Menu Highlights -->
+  <section class="py-16 md:py-24 bg-texture">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-charcoal-900 mb-4 fade-in">Our Signature Dishes</h2>
+        <p class="text-lg text-charcoal-700 max-w-2xl mx-auto fade-in">Discover our most beloved Mexican street food creations, crafted with authentic recipes and fresh ingredients.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-delay">
+        <!-- Dish 1 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-warm fade-in group">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="https://images.pexels.com/photos/2092897/pexels-photo-2092897.jpeg" 
+              alt="Carne Asada Tacos" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div class="absolute top-4 right-4">
+              <span class="inline-block px-3 py-1 bg-primary-400 text-white text-sm font-medium rounded-full">Popular</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-display font-bold mb-2">Carne Asada Tacos</h3>
+            <p class="text-charcoal-700 mb-4">Grilled marinated steak, cilantro, onion, and guacamole on fresh corn tortillas.</p>
+            <div class="flex gap-2">
+              <span class="inline-block px-2 py-1 bg-secondary-100 text-secondary-700 text-xs rounded-md">Gluten-free</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dish 2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-warm fade-in group">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg" 
+              alt="Elotes" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-display font-bold mb-2">Elotes</h3>
+            <p class="text-charcoal-700 mb-4">Mexican street corn with cotija cheese, chili powder, lime, and mayo.</p>
+            <div class="flex gap-2">
+              <span class="inline-block px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded-md">Vegetarian</span>
+              <span class="inline-block px-2 py-1 bg-secondary-100 text-secondary-700 text-xs rounded-md">Gluten-free</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dish 3 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-warm fade-in group">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="https://images.pexels.com/photos/10305696/pexels-photo-10305696.jpeg" 
+              alt="Churros" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-display font-bold mb-2">Churros con Chocolate</h3>
+            <p class="text-charcoal-700 mb-4">Cinnamon-sugar coated churros served with rich chocolate dipping sauce.</p>
+            <div class="flex gap-2">
+              <span class="inline-block px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded-md">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12 fade-in">
+        <a href="/menu" class="btn btn-primary">
+          View Full Menu
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Preview -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1 fade-in">
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-charcoal-900 mb-6">Our Story</h2>
+          <p class="text-lg text-charcoal-700 mb-4">
+            El Pocho was born from our passion for authentic Mexican street food and the vibrant culture that surrounds it. Located in the heart of Toronto, we bring the energetic atmosphere and bold flavors of Mexico's streets to Canada.
+          </p>
+          <p class="text-lg text-charcoal-700 mb-6">
+            Our mission is simple: serve delicious, unpretentious food made with traditional recipes and fresh ingredients in a space where everyone feels welcome.
+          </p>
+          <a href="/about" class="btn btn-secondary">Learn More About Us</a>
+        </div>
+        <div class="order-1 lg:order-2 fade-in">
+          <div class="relative">
+            <img 
+              src="https://images.pexels.com/photos/2235841/pexels-photo-2235841.jpeg" 
+              alt="El Pocho restaurant interior" 
+              class="w-full h-auto rounded-xl shadow-warm"
+            />
+            <div class="absolute -bottom-6 -left-6 hidden md:block">
+              <img 
+                src="https://images.pexels.com/photos/5589055/pexels-photo-5589055.jpeg" 
+                alt="El Pocho cocktail" 
+                class="w-32 h-32 md:w-48 md:h-48 object-cover rounded-xl shadow-warm border-4 border-white"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Instagram Feed Preview -->
+  <section class="py-16 md:py-24 bg-texture">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-charcoal-900 mb-4 fade-in">Follow Our Journey</h2>
+        <p class="text-lg text-charcoal-700 max-w-2xl mx-auto mb-6 fade-in">Join us on Instagram for mouth-watering food photos, behind-the-scenes moments, and special announcements.</p>
+        <a href="https://www.instagram.com/elpochobar/" class="inline-flex items-center text-accent-500 hover:text-accent-600 font-medium transition-colors fade-in" target="_blank" rel="noopener noreferrer">
+          @elpochobar
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 ml-1">
+            <path fill-rule="evenodd" d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.03 20.03a.75.75 0 01-1.06-1.06L17.69 5.25H8.25a.75.75 0 010-1.5z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 stagger-delay">
+        <a href="https://www.instagram.com/elpochobar/" class="block overflow-hidden rounded-lg aspect-square fade-in group" target="_blank" rel="noopener noreferrer">
+          <img 
+            src="https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg" 
+            alt="El Pocho Instagram post" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </a>
+        <a href="https://www.instagram.com/elpochobar/" class="block overflow-hidden rounded-lg aspect-square fade-in group" target="_blank" rel="noopener noreferrer">
+          <img 
+            src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg" 
+            alt="El Pocho Instagram post" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </a>
+        <a href="https://www.instagram.com/elpochobar/" class="block overflow-hidden rounded-lg aspect-square fade-in group" target="_blank" rel="noopener noreferrer">
+          <img 
+            src="https://images.pexels.com/photos/7260637/pexels-photo-7260637.jpeg" 
+            alt="El Pocho Instagram post" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </a>
+        <a href="https://www.instagram.com/elpochobar/" class="block overflow-hidden rounded-lg aspect-square fade-in group" target="_blank" rel="noopener noreferrer">
+          <img 
+            src="https://images.pexels.com/photos/8512601/pexels-photo-8512601.jpeg" 
+            alt="El Pocho Instagram post" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <CallToAction />
+</Layout>
