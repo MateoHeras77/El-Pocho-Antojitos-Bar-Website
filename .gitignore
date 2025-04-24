@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env files
+.env
+.env.*
+
+# MacOS system files
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Astro cache
+.astro/
+
+# Other system files
+Thumbs.db
+
+# Optional: Ignore local development files
+*.local
